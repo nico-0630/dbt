@@ -42,5 +42,10 @@ models:
       +materialized: table
     staging:
       +materialized: view
+      +schema: staging
     mart:
-      +materialized: table
+     +materialized: table
+     +schema: mart
+
+seeds:
+  +schema: seed
